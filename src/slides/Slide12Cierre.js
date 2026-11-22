@@ -80,6 +80,3 @@ export function Slide12Cierre() {
     </${motion.div}>
   `;
 }
-    </${motion.div}>
-  `;
-}
