@@ -1,0 +1,129 @@
+:root {
+  --forest-950: #071710;
+  --forest-900: #091e15;
+  --forest-850: #0d281d;
+  --forest-800: #133526;
+  --forest-700: #1b4332;
+  --forest-600: #2d6a4f;
+  --mint-300: #95d5b2;
+  --mint-400: #74c69d;
+  --emerald-wave: #34d399;
+  --cream: #f7f6f2;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--forest-900);
+  color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Atmospheric dark-botanical radial glow */
+.botanical-glow {
+  background: radial-gradient(
+    circle at 72% 45%,
+    rgba(64, 145, 108, 0.22) 0%,
+    rgba(27, 67, 50, 0.14) 35%,
+    rgba(9, 30, 21, 0.96) 78%
+  );
+}
+
+.botanical-glow-left {
+  background: radial-gradient(
+    circle at 25% 50%,
+    rgba(82, 183, 136, 0.18) 0%,
+    rgba(19, 53, 38, 0.25) 40%,
+    rgba(9, 30, 21, 0.98) 80%
+  );
+}
+
+/* Subtle diagonal hatch texture */
+.pattern-hatch-light {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(149, 213, 178, 0.08),
+    rgba(149, 213, 178, 0.08) 2px,
+    transparent 2px,
+    transparent 9px
+  );
+}
+
+/* Glass card surface */
+.glass-card {
+  background: rgba(19, 53, 38, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(149, 213, 178, 0.16);
+}
+
+.glass-card-dark {
+  background: rgba(7, 23, 16, 0.68);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(149, 213, 178, 0.14);
+}
+
+/* Custom thin scrollbars */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(116, 198, 157, 0.35);
+  border-radius: 9999px;
+}
+
+/* Mobile responsive safe area padding */
+@supports (padding-top: env(safe-area-inset-top)) {
+  header.no-print {
+    padding-top: env(safe-area-inset-top);
+  }
+  footer.no-print {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Mobile responsive stage container */
+.slide-container-responsive {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .slide-container-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide-container-responsive {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

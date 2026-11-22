@@ -1,0 +1,23 @@
+{
+  "name": "presentacion-sedum-praealtum",
+  "version": "1.0.0",
+  "description": "Presentacion web sobre estructura histoquimica de Sedum praealtum (siempreviva)",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "esbuild src/main.js --bundle --minify --format=esm --outfile=dist/bundle.js",
+    "tunnel": "npx --yes cloudflared tunnel --url http://localhost:5173"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "htm": "^3.1.1",
+    "lucide": "^0.475.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
