@@ -13,7 +13,7 @@ export function Slide12Cierre() {
       variants=${staggerContainer}
       initial="hidden"
       animate="show"
-      className="w-full max-w-5xl mx-auto px-6 sm:px-10 py-10 flex flex-col justify-center items-center text-center gap-7 relative z-10"
+      className="w-full max-w-5xl mx-auto px-6 sm:px-10 py-10 flex flex-col justify-center items-center text-center gap-6 relative z-10"
     >
       <${motion.div}
         variants=${popIn}
@@ -26,32 +26,10 @@ export function Slide12Cierre() {
         />
       </${motion.div}>
 
-      <${motion.span}
-        variants=${popIn}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-mint-400 text-forest-950 text-xs font-extrabold uppercase tracking-widest shadow-lg"
-      >
-        <${Icon} name="award" className="w-4 h-4" />
-        Estatus: ${D.documento.estatus}
-      </${motion.span}>
-
-      <${motion.h2}
-        variants=${fromBottom}
-        className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white"
-      >
-        ¡Muchas Gracias por su Atención!
-      </${motion.h2}>
-
-      <${motion.div}
-        variants=${fromBottom}
-        className="max-w-3xl mx-auto px-6 py-4 rounded-2xl bg-forest-800/60 border border-mint-400/30 backdrop-blur-md shadow-2xl"
-      >
-        <p className="text-base sm:text-xl italic text-mint-300 font-light leading-relaxed">
-          “Mirar más allá de lo visible es el primer paso para transformar el conocimiento de nuestras plantas en ciencia para el futuro.”
-        </p>
-      </${motion.div}>
-
       <${motion.p} variants=${fromBottom} className="text-xs sm:text-sm text-white/75 max-w-2xl leading-relaxed">
-        Jurado evaluador de la ${D.documento.institucion}, ${D.documento.facultad}, ${D.documento.escuela} — ${D.documento.lugarAprobacion}.
+        ${D.documento.institucion} · ${D.documento.facultad}
+        <br />
+        <span className="text-mint-300 font-medium">${D.documento.escuela}</span> — ${D.documento.lugarAprobacion}
       </${motion.p}>
 
       <${motion.div} variants=${fromBottom} className="grid sm:grid-cols-3 gap-4 w-full max-w-3xl text-left">
@@ -71,7 +49,23 @@ export function Slide12Cierre() {
         </div>
       </${motion.div}>
 
-      <${motion.div} variants=${fromBottom} className="flex flex-wrap justify-center gap-2 pt-2">
+      <${motion.h2}
+        variants=${fromBottom}
+        className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white pt-2"
+      >
+        ¡Muchas Gracias por su Atención!
+      </${motion.h2}>
+
+      <${motion.div}
+        variants=${fromBottom}
+        className="max-w-3xl mx-auto px-6 py-4 rounded-2xl bg-forest-800/80 border border-mint-400/40 backdrop-blur-md shadow-2xl"
+      >
+        <p className="text-base sm:text-lg italic text-mint-300 font-medium leading-relaxed">
+          “Mirar más allá de lo visible es el primer paso para transformar el conocimiento de nuestras plantas en ciencia para el futuro.”
+        </p>
+      </${motion.div}>
+
+      <${motion.div} variants=${fromBottom} className="flex flex-wrap justify-center gap-2 pt-1">
         ${D.documento.palabrasClave.map(
           (kw) => html`
             <span
@@ -83,6 +77,9 @@ export function Slide12Cierre() {
           `
         )}
       </${motion.div}>
+    </${motion.div}>
+  `;
+}
     </${motion.div}>
   `;
 }
