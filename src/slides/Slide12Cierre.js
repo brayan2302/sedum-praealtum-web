@@ -36,12 +36,21 @@ export function Slide12Cierre() {
 
       <${motion.h2}
         variants=${fromBottom}
-        className="font-display text-5xl sm:text-7xl font-bold tracking-tight text-white"
+        className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white"
       >
-        Muchas Gracias
+        ¡Muchas Gracias por su Atención!
       </${motion.h2}>
 
-      <${motion.p} variants=${fromBottom} className="text-sm sm:text-base text-white/80 max-w-2xl leading-relaxed">
+      <${motion.div}
+        variants=${fromBottom}
+        className="max-w-3xl mx-auto px-6 py-4 rounded-2xl bg-forest-800/60 border border-mint-400/30 backdrop-blur-md shadow-2xl"
+      >
+        <p className="text-base sm:text-xl italic text-mint-300 font-light leading-relaxed">
+          “Mirar más allá de lo visible es el primer paso para transformar el conocimiento de nuestras plantas en ciencia para el futuro.”
+        </p>
+      </${motion.div}>
+
+      <${motion.p} variants=${fromBottom} className="text-xs sm:text-sm text-white/75 max-w-2xl leading-relaxed">
         Jurado evaluador de la ${D.documento.institucion}, ${D.documento.facultad}, ${D.documento.escuela} — ${D.documento.lugarAprobacion}.
       </${motion.p}>
 
