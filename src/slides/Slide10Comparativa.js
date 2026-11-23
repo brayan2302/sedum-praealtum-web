@@ -11,19 +11,19 @@ export function Slide10Comparativa() {
     {
       badge: 'Método Extractivo',
       title: 'Fitoquímica Convencional',
-      desc: 'Requiere maceración, extracción y cuantificación de las sustancias presentes, lo que implica la destrucción de la muestra y pérdida de la arquitectura tisular.',
+      desc: 'Requiere maceración, molienda y extracción con solventes químicos. Cuantifica los metabolitos presentes, pero destruye la muestra vegetal y pierde por completo la arquitectura celular original.',
       highlight: false,
     },
     {
       badge: 'Localización In Situ',
       title: 'Histoquímica Vegetal',
-      desc: 'Localiza compuestos químicos directamente en los tejidos sin destruir la muestra ni extraer los metabolitos, revelando la distribución espacial exacta.',
+      desc: 'Aplica reacciones químicas cromogénicas selectivas directamente sobre cortes tisulares intactos. Revela la distribución microscópica espacial exacta de flavonoides, taninos, mucílagos y lípidos.',
       highlight: true,
     },
     {
-      badge: 'Máxima Especificidad',
-      title: 'Inmunohistoquímica (IHQ)',
-      desc: 'Fusiona histología, inmunología y química mediante anticuerpos específicos para detectar macromoléculas y mapear procesos de cicatrización y conservación tisular.',
+      badge: 'Valoración Funcional',
+      title: 'Relevancia Farmacognóstica',
+      desc: 'Vincula la acumulación de metabolitos en parénquima acuífero, haces vasculares y epidermis con las propiedades terapéuticas tradicionales (cicatrizante, emoliente) de la Sedum praealtum.',
       highlight: false,
     },
   ];
@@ -40,7 +40,7 @@ export function Slide10Comparativa() {
           10 · Integración Metodológica
         </span>
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mt-1">
-          Histoquímica vs. Fitoquímica vs. Inmunohistoquímica
+          Histoquímica Vegetal vs. Fitoquímica Convencional
         </h2>
       </${motion.div}>
 
@@ -79,7 +79,7 @@ export function Slide10Comparativa() {
       >
         <${Icon} name="shield-check" className="w-5 h-5 text-mint-300 mt-0.5 shrink-0" />
         <p className="text-white/90">
-          <strong>Requisito crítico para IHQ:</strong> Exige una <strong>fijación formalcohólica óptima</strong> y procesamiento histológico riguroso para evitar degradación de antígenos y conservar íntegra la arquitectura celular.
+          <strong>Principio fundamental de la Histoquímica Vegetal:</strong> A diferencia de los métodos extractivos que destruyen el tejido, la histoquímica vegetal preserva la muestra y revela el sitio celular preciso de biosíntesis y almacenamiento de los principios activos de la <em>Sedum praealtum</em>.
         </p>
       </${motion.div}>
     </${motion.div}>

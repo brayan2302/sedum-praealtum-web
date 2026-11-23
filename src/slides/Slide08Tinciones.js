@@ -9,7 +9,7 @@ const html = htm.bind(React.createElement);
 export function Slide08Tinciones() {
   const [filter, setFilter] = useState('todos');
   const filters = [
-    { id: 'todos', label: 'Todas (8)' },
+    { id: 'todos', label: 'Todas (7)' },
     { id: 'pared', label: 'Pared y Haces' },
     { id: 'polisacaridos', label: 'Mucílagos / Polisacáridos' },
     { id: 'reservas', label: 'Reservas' },
@@ -28,10 +28,10 @@ export function Slide08Tinciones() {
       <${motion.div} variants=${fromTop} className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-mint-300">
-            08 · Resultados · Objetivo Específico 2
+            09 · Resultados · Objetivo Específico 2
           </span>
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mt-1">
-            Técnicas de Tinción Histológica
+            Técnicas de Tinción e Histoquímica Vegetal
           </h2>
         </div>
 

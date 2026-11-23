@@ -129,7 +129,7 @@ export const PRESENTATION_DATA = {
     metodologia:
       'Investigación documental (monográfica-bibliográfica), de tipo descriptivo y diseño bibliográfico no experimental mediante fichaje y matrices de análisis documental.',
     conclusion:
-      'Posee una organización tisular adaptada a la reserva hídrica (parénquima abundante y tejidos conductores). La integración de técnicas histológicas, histoquímicas e inmunohistoquímicas permite localizar flavonoides, taninos, alcaloides y mucílagos.',
+      'Posee una organización tisular adaptada a la reserva hídrica (parénquima abundante y tejidos conductores). La integración de técnicas histológicas e histoquímicas vegetales permite localizar in situ flavonoides, taninos, alcaloides y mucílagos.',
   },
 
   abstractEn: {
@@ -140,7 +140,7 @@ export const PRESENTATION_DATA = {
     methodology:
       'Documentary approach (monographic-bibliographic), descriptive type, and non-experimental bibliographic design using card-indexing and analytical matrices.',
     conclusion:
-      'Possesses tissue organization adapted to water storage. Integrating histological, histochemical, and immunohistochemical techniques identifies spatial distribution of flavonoids, tannins, alkaloids, and mucilage.',
+      'Possesses tissue organization adapted to water storage. Integrating histological and plant histochemical techniques identifies in situ spatial distribution of flavonoids, tannins, alkaloids, and mucilage.',
   },
 
   problematica: [
@@ -255,12 +255,6 @@ export const PRESENTATION_DATA = {
 
   tinciones: [
     {
-      nombre: 'Hematoxilina-eosina',
-      categoria: 'general',
-      fundamento: 'Tiñe estructuras ácidas (azul-violeta) y básicas/citoplasmáticas (rosado).',
-      aplicacion: 'Organización general de los tejidos vegetales.',
-    },
-    {
       nombre: 'Safranina y verde rápido',
       categoria: 'pared',
       fundamento: 'Safranina tiñe paredes lignificadas (rojo); verde rápido tejidos celulósicos (verde).',
@@ -365,7 +359,7 @@ export const PRESENTATION_DATA = {
     'Las técnicas de tinción histológica diferencian paredes celulares, tejidos vasculares, parénquima y reservas en hoja, tallo y raíz.',
     'La histoquímica permite localizar in situ flavonoides, taninos, alcaloides, mucílagos, lípidos y compuestos fenólicos sin destruir la muestra.',
     'Identificar la distribución espacial de estos metabolitos explica sus funciones defensivas, adaptativas y propiedades terapéuticas.',
-    'La integración de histología, histoquímica e inmunohistoquímica ofrece el abordaje más completo para caracterizar S. praealtum.',
+    'La integración de histología y técnicas histoquímicas vegetales ofrece el abordaje más completo para caracterizar S. praealtum in situ.',
     'Persiste una limitada cantidad de investigaciones específicas en Venezuela, lo que evidencia la necesidad de ampliar los estudios experimentales.',
   ],
 
@@ -373,14 +367,14 @@ export const PRESENTATION_DATA = {
     'La hoja es el órgano con mayor relevancia histoquímica al concentrar flavonoides, taninos y mucílagos asociados a efectos antiinflamatorios y cicatrizantes.',
     'Gran parte de la evidencia proviene de especies afines de Sedum o Crassulaceae; los hallazgos deben validarse localmente sin extrapolación absoluta.',
     'Identificar zonas de acumulación orienta una cosecha selectiva de hojas sin afectar innecesariamente tallo o raíz.',
-    'Una fijación formalcohólica óptima es determinante para evitar degradación de antígenos y pérdida de reactividad histoquímica.',
+    'Una fijación formalcohólica óptima es determinante para preservar la arquitectura tisular y garantizar la reactividad histoquímica vegetal.',
   ],
 
   recomendaciones: [
     {
       num: '01',
       titulo: 'Estandarizar Fijación',
-      texto: 'Estandarizar los protocolos de fijación formalcohólica para conservar la morfología y los antígenos.',
+      texto: 'Estandarizar los protocolos de fijación formalcohólica para conservar la morfología celular y la reactividad de los metabolitos vegetales.',
     },
     {
       num: '02',
